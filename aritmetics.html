@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> aritmeticke operacije</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <body>
+         <script>
+        
+         var a = prompt("enter first number");
+         var c = prompt("enter operater");
+         var b = prompt("enter second number");
+
+        function sabiranje(a,b){
+            return a+b;
+        }
+        function oduzimanje(a,b){
+            return a-b;
+        }
+        function mnozenje(a,b){
+            return a*b;
+        }
+        function deljenje(a,b){
+            return a/b;
+        }
+        switch(c) {
+
+            case "+" :
+            var result = sabiranje(parseInt(a),parseInt(b));
+            break;
+            case "-" :
+            var result = oduzimanje(parseInt(a),parseint(b));
+            break;
+            case "*" :
+            var result = mnozenje(parseint(a),parseint(b));
+            break;
+            case"/" :
+            var result = deljenje(parseInt(a),parseint(b));
+            break;
+            default :
+            var result = "the operation is not valid";
+            break;
+           }
+
+           alert("result is " +  result);
+
+
+         
+          
+
+
+         </script>
+    
+    </body>
+</html>
